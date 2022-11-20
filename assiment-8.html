@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: yellow;
+    }
+
+    #hd {
+        color: yellow;
+    }
+    .hd1 {
+        color: yellow;
+        font-family: sans-serif;
+    }
+
+</style>
+
+<body>
+    <center>
+        <h1 class="hd1">ASCII CODE OF KEYBOARD KEY <br>
+           Try lower and uper case key & symbols
+            <h1 id="hd"></h1>
+        </h1>
+        <h2 id="pid"></h2>
+    </center>
+
+
+    <script>
+        let a = prompt("enter any one keyboard key and get ASCII code");
+        let b = a.charCodeAt();
+        document.getElementById("pid").innerHTML = b;
+        document.getElementById("hd").innerHTML = a;
+    </script>
+</body>
+
+</html>
